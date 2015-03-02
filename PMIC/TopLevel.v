@@ -53,5 +53,20 @@ reg enable_3v, enable_2v, enable_1v, ready;
 
 reg[3:0] state;
 reg[3:0] next_state;
+reg lpmode;
+//Power Management Circuit starts in S0 State
+initial
+begin
+	state = `S0;
+	next_state = `S0;
+	ready = 0;
+	enable_3v = 0;
+	enable_2v = 0;
+	enable_1v = 0;
+	lpmode = 0;
+end
 
+//State changes are positive edge triggered
+always @(posedge clock)
+	state = next_state;
 endmodule
