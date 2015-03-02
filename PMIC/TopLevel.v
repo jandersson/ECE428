@@ -43,15 +43,15 @@
 `define T5	3
 
 module PMIC
-	(low_batt, low_pow, onoff, reset, enable_3v, enable_2v, enable_1v, ready);
-input low_batt, low_pow, onoff, reset;
+	(low_batt, low_pow, onoff, reset, enable_3v, enable_2v, enable_1v, ready, clock);
+
+//I/O Ports
+input low_batt, low_pow, onoff, reset, clock;
 output enable_3v, enable_2v, enable_1v, ready;
-localparam STATE_Initial = 3'd0,
-			  STATE_Enable3v = 3'd1,
-			  STATE_Enable2v = 3'd2,
-			  STATE_Enable3v = 3'd3,
-			  STATE_
-reg[2:0] CurrentState;
-reg PowerOn
+//Declared output signals are registers
+reg enable_3v, enable_2v, enable_1v, ready;
+
+reg[3:0] state;
+reg[3:0] next_state;
 
 endmodule
