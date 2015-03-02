@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Mon Feb 02 17:13:57 2015
+# Process ID: 2416
+# Log file: E:/Counter_Tutorial/planAhead_run_1/planAhead.log
+# Journal file: E:/Counter_Tutorial/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source E:/Counter_Tutorial/pa.fromNetlist.tcl
+exit

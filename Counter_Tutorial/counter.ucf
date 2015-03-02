@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+NET "countup" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "countup" LOC = N4;
+NET "lights[0]" LOC = U18;
+NET "lights[1]" LOC = M14;
+NET "lights[2]" LOC = N14;
+NET "reset" LOC = P3;

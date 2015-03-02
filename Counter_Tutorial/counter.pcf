@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map O.40d on Mon Feb 02 17:15:48 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "countup" LOCATE = SITE "N4" LEVEL 1;
+PIN countup_pin<0> = BEL "countup" PINNAME PAD;
+PIN "countup_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "lights<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "lights<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "lights<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "reset" LOCATE = SITE "P3" LEVEL 1;
+SCHEMATIC END;
+

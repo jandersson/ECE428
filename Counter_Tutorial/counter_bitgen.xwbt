@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Counter_Tutorial\counter.ncd
+OUTFILE=E:\Counter_Tutorial\counter.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=E:\Counter_Tutorial
+LICENSE=ISE
+USER_INFO=203015560_205625022_205335601_546
