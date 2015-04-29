@@ -1,22 +1,25 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/jonas/ECE428/PMIC/PMIC_isim_beh.exe -prj /home/jonas/ECE428/PMIC/PMIC_beh.prj work.PMIC work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/jonas/ECE428/PMIC/stimulus_isim_beh.exe -prj /home/jonas/ECE428/PMIC/stimulus_beh.prj work.stimulus work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Analyzing Verilog file "/home/jonas/ECE428/PMIC/down_counter.v" into library work
 Analyzing Verilog file "/home/jonas/ECE428/PMIC/TopLevel.v" into library work
+Analyzing Verilog file "/home/jonas/ECE428/PMIC/stimulus.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 WARNING:HDLCompiler:189 - "/home/jonas/ECE428/PMIC/TopLevel.v" Line 70: Size mismatch in connection of port <clear>. Formal port size is 1-bit while actual signal size is 32-bit.
 Completed static elaboration
 Fuse Memory Usage: 94640 KB
-Fuse CPU Usage: 930 ms
+Fuse CPU Usage: 1060 ms
 Compiling module behav_counter
 Compiling module PMIC
+Compiling module stimulus
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 3 Verilog Units
-Built simulation executable /home/jonas/ECE428/PMIC/PMIC_isim_beh.exe
-Fuse Memory Usage: 655048 KB
-Fuse CPU Usage: 940 ms
-GCC CPU Usage: 310 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable /home/jonas/ECE428/PMIC/stimulus_isim_beh.exe
+Fuse Memory Usage: 655204 KB
+Fuse CPU Usage: 1080 ms
+GCC CPU Usage: 370 ms

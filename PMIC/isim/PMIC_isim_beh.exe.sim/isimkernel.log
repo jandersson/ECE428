@@ -2,9 +2,28 @@ Command line:
    PMIC_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52975
+     -socket  35338
 
-Wed Mar  4 01:58:18 2015
+Wed Mar  4 18:13:26 2015
 
 
- Elaboration Time: 0.03 sec
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 225.718 Meg
+
+ Total Signals          : 25
+ Total Nets             : 103
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 215
+Total Line Count : 139
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 301.22 Meg
+
+Wed Mar  4 18:25:13 2015
+

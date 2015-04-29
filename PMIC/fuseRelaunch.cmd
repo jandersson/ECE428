@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/jonas/ECE428/PMIC/PMIC_isim_beh.exe" -prj "/home/jonas/ECE428/PMIC/PMIC_beh.prj" "work.PMIC" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/jonas/ECE428/PMIC/stimulus_isim_beh.exe" -prj "/home/jonas/ECE428/PMIC/stimulus_beh.prj" "work.stimulus" "work.glbl" 
