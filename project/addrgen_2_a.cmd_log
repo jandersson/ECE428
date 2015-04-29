@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/addrgen_2_a.vhd -prj project -o addrgen_2_a.spl -module addrgen_2_a -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 addrgen_2_a.spl /home/jonas/ECE428/project/addrgen_2_a.sym 

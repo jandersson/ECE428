@@ -1,0 +1,3 @@
+vhdl work "src/Bram2.vhd"
+vhdl work "src/addrgen_2_a.vhd"
+vhdl work "src/Ram_out_2.vhd"

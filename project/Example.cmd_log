@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/Bram2.vhd -lib work src/Bram1.vhd -lib work src/addrgen_1_a.vhd -lib work src/Ram_out_2.vhd -lib work src/Ram_out_1.vhd -lib work src/Top_module.vhd -lib work src/addrgen_1_b.v -lib work src/Example.vhd -prj project -o Example.spl -module Example -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+xst -intstyle ise -ifn "/home/jonas/ECE428/project/Example.xst" -ofn "/home/jonas/ECE428/project/Example.syr" 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/Bram2.vhd -prj project -o Bram2.spl -module Bram2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Bram2.spl /home/jonas/ECE428/project/Bram2.sym 

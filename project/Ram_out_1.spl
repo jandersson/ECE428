@@ -1,0 +1,12 @@
+[Inputs]
+Reset_write
+reset
+pclk
+pclk_180
+enb
+=adr_1_b[17:0]=
+[Outputs]
+=data_out_1[4:0]=
+=data_in_1[4:0]=
+=adr_1_a[17:0]=
+[BiDir]

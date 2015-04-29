@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/jonas/ECE428/PMIC/stimulus_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="stimulus" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/stimulus/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="group10" type="group">
+      <obj_property name="label">Inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/stimulus/onoff" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">onoff</obj_property>
+         <obj_property name="ObjectShortName">onoff</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/low_pow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">low_pow</obj_property>
+         <obj_property name="ObjectShortName">low_pow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/stimulus/low_batt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">low_batt</obj_property>
+         <obj_property name="ObjectShortName">low_batt</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/stimulus/enable_3v" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_3v</obj_property>
+      <obj_property name="ObjectShortName">enable_3v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/enable_2v" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_2v</obj_property>
+      <obj_property name="ObjectShortName">enable_2v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/enable_1v" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_1v</obj_property>
+      <obj_property name="ObjectShortName">enable_1v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stimulus/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+</wave_config>

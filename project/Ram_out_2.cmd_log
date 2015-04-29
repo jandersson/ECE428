@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/Bram2.vhd -lib work src/addrgen_2_a.vhd -lib work src/Ram_out_2.vhd -prj project -o Ram_out_2.spl -module Ram_out_2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Ram_out_2.spl /home/jonas/ECE428/project/Ram_out_2.sym 

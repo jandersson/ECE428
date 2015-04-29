@@ -1,0 +1,23 @@
+digraph PMIC {
+node [shape=circle];
+S0;
+S1;
+S2;
+S3;
+S4;
+S5;
+S6;
+S7;
+S8;
+S9;
+LD_T1;
+LD_T2;
+LD_T3;
+LD_T4;
+LD_T5;
+WT_T1;
+WT_T2;
+WT_T3;
+WT_T4;
+WT_T5;
+}

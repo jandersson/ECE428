@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/Bram2.vhd -lib work src/Bram1.vhd -lib work src/addrgen_2_a.vhd -lib work src/addrgen_1_a.vhd -lib work src/Ram_out_2.vhd -lib work src/Ram_out_1.vhd -lib work src/Top_module.vhd -prj project -o Top_module.spl -module Top_module -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Top_module.spl /home/jonas/ECE428/project/Top_module.sym 

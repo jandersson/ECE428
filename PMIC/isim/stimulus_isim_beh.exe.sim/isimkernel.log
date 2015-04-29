@@ -1,0 +1,29 @@
+Command line:
+   stimulus_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50476
+
+Wed Mar  4 19:58:57 2015
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 225.718 Meg
+
+ Total Signals          : 29
+ Total Nets             : 103
+ Total Signal Drivers   : 19
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 28
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 219
+Total Line Count : 159
+
+ Total Simulation Time: 0.16 sec
+
+ Current Memory Usage: 301.22 Meg
+
+Thu Mar  5 00:28:34 2015
+

@@ -1,0 +1,12 @@
+[Inputs]
+Reset
+PClk
+en_1
+en_2
+=addr_1_b[17:0]=
+=addr_2_b[17:0]=
+[Outputs]
+VtcVde
+=ram_out_1[4:0]=
+=ram_out_2[4:0]=
+[BiDir]

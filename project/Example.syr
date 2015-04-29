@@ -1,0 +1,598 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Example.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Example.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Example"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Example
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"src"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/jonas/ECE428/project/src/addrgen_1_b.v" into library work
+Parsing module <addrgen_1_b>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/Bram2.vhd" into library work
+Parsing entity <Bram2>.
+Parsing architecture <Bram2_a> of entity <bram2>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/Bram1.vhd" into library work
+Parsing entity <Bram1>.
+Parsing architecture <Bram1_a> of entity <bram1>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/addrgen_2_a.vhd" into library work
+Parsing entity <addrgen_2_a>.
+Parsing architecture <Behavioral> of entity <addrgen_2_a>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/addrgen_1_a.vhd" into library work
+Parsing entity <addrgen_1_a>.
+Parsing architecture <Behavioral> of entity <addrgen_1_a>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/Ram_out_2.vhd" into library work
+Parsing entity <Ram_out_2>.
+Parsing architecture <Behavioral> of entity <ram_out_2>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/Ram_out_1.vhd" into library work
+Parsing entity <Ram_out_1>.
+Parsing architecture <Behavioral> of entity <ram_out_1>.
+Parsing VHDL file "/home/jonas/ECE428/project/src/Top_module.vhd" into library work
+Parsing entity <Top_module>.
+Parsing architecture <Behavioral> of entity <top_module>.
+WARNING:HDLCompiler:946 - "/home/jonas/ECE428/project/src/Top_module.vhd" Line 89: Actual for formal port ce is neither a static name nor a globally static expression
+Parsing VHDL file "/home/jonas/ECE428/project/src/Example.vhd" into library work
+Parsing entity <Example>.
+Parsing architecture <Behavioral> of entity <example>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Example> (architecture <Behavioral>) from library <work>.
+Going to verilog side to elaborate module addrgen_1_b
+
+Elaborating module <addrgen_1_b>.
+WARNING:HDLCompiler:413 - "/home/jonas/ECE428/project/src/addrgen_1_b.v" Line 52: Result of 19-bit expression is truncated to fit in 18-bit target.
+Back to vhdl to continue elaboration
+
+Elaborating entity <Top_module> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Ram_out_1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Bram1> (architecture <Bram1_a>) from library <work>.
+
+Elaborating entity <addrgen_1_a> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Ram_out_2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Bram2> (architecture <Bram2_a>) from library <work>.
+
+Elaborating entity <addrgen_2_a> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/jonas/ECE428/project/src/Example.vhd" Line 28: Net <addr_2b[17]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/jonas/ECE428/project/src/Example.vhd" Line 29: Net <en_ram2> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Example>.
+    Related source file is "/home/jonas/ECE428/project/src/Example.vhd".
+WARNING:Xst:653 - Signal <addr_2b> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <en_ram2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Example> synthesized.
+
+Synthesizing Unit <addrgen_1_b>.
+    Related source file is "/home/jonas/ECE428/project/src/addrgen_1_b.v".
+    Found 1-bit register for signal <en_ram1>.
+    Found 18-bit register for signal <cnt>.
+    Found 18-bit adder for signal <cnt[17]_GND_5_o_add_5_OUT> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+Unit <addrgen_1_b> synthesized.
+
+Synthesizing Unit <Top_module>.
+    Related source file is "/home/jonas/ECE428/project/src/Top_module.vhd".
+INFO:Xst:3210 - "/home/jonas/ECE428/project/src/Top_module.vhd" line 49: Output port <data_in_1> of the instance <RAM_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jonas/ECE428/project/src/Top_module.vhd" line 49: Output port <adr_1_a> of the instance <RAM_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jonas/ECE428/project/src/Top_module.vhd" line 63: Output port <data_in_2> of the instance <RAM_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jonas/ECE428/project/src/Top_module.vhd" line 63: Output port <adr_2_a> of the instance <RAM_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Top_module> synthesized.
+
+Synthesizing Unit <Ram_out_1>.
+    Related source file is "/home/jonas/ECE428/project/src/Ram_out_1.vhd".
+    Found 31-bit register for signal <data>.
+    Found 31-bit adder for signal <data[30]_GND_10_o_add_0_OUT> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+Unit <Ram_out_1> synthesized.
+
+Synthesizing Unit <addrgen_1_a>.
+    Related source file is "/home/jonas/ECE428/project/src/addrgen_1_a.vhd".
+    Found 31-bit register for signal <addr1>.
+    Found 31-bit adder for signal <addr1[30]_GND_12_o_add_1_OUT> created at line 52.
+    Found 31-bit comparator lessequal for signal <n0000> created at line 48
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <addrgen_1_a> synthesized.
+
+Synthesizing Unit <Ram_out_2>.
+    Related source file is "/home/jonas/ECE428/project/src/Ram_out_2.vhd".
+    Found 31-bit register for signal <data>.
+    Found 31-bit adder for signal <data[30]_GND_13_o_add_0_OUT> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+Unit <Ram_out_2> synthesized.
+
+Synthesizing Unit <addrgen_2_a>.
+    Related source file is "/home/jonas/ECE428/project/src/addrgen_2_a.vhd".
+    Found 31-bit register for signal <addr1>.
+    Found 31-bit adder for signal <addr1[30]_GND_15_o_add_1_OUT> created at line 52.
+    Found 31-bit comparator lessequal for signal <n0000> created at line 48
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <addrgen_2_a> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 31-bit adder                                          : 4
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 18-bit register                                       : 1
+ 31-bit register                                       : 4
+# Comparators                                          : 2
+ 31-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2
+ 31-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <src/Bram1.ngc>.
+Reading core <src/Bram2.ngc>.
+Loading core <Bram1> for timing and area information for instance <RAM1>.
+Loading core <Bram2> for timing and area information for instance <RAM2>.
+
+Synthesizing (advanced) Unit <Ram_out_1>.
+The following registers are absorbed into counter <data>: 1 register on signal <data>.
+Unit <Ram_out_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Ram_out_2>.
+The following registers are absorbed into counter <data>: 1 register on signal <data>.
+Unit <Ram_out_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <addrgen_1_a>.
+The following registers are absorbed into counter <addr1>: 1 register on signal <addr1>.
+Unit <addrgen_1_a> synthesized (advanced).
+
+Synthesizing (advanced) Unit <addrgen_1_b>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <addrgen_1_b> synthesized (advanced).
+
+Synthesizing (advanced) Unit <addrgen_2_a>.
+The following registers are absorbed into counter <addr1>: 1 register on signal <addr1>.
+Unit <addrgen_2_a> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 18-bit up counter                                     : 1
+ 31-bit up counter                                     : 4
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 2
+ 31-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <Example>, Counter <Inst_top_module/RAM_1/data> <Inst_top_module/RAM_2/data> are equivalent, XST will keep only <Inst_top_module/RAM_1/data>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_5> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_6> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_7> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_8> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_9> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_10> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_11> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_12> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_13> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_14> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_15> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_16> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_17> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_18> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_19> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_20> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_21> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_22> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_23> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_24> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_25> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_26> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_27> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_28> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_29> of sequential type is unconnected in block <Example>.
+WARNING:Xst:2677 - Node <Inst_top_module/RAM_1/data_30> of sequential type is unconnected in block <Example>.
+
+Optimizing unit <Example> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Example, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Example.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 433
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 20
+#      LUT2                        : 1
+#      LUT3                        : 108
+#      LUT4                        : 12
+#      LUT5                        : 63
+#      LUT6                        : 27
+#      MUXCY                       : 95
+#      MUXF7                       : 10
+#      VCC                         : 1
+#      XORCY                       : 85
+# FlipFlops/Latches                : 101
+#      FDCE                        : 1
+#      FDE                         : 14
+#      FDR                         : 64
+#      FDRE                        : 18
+#      FDS                         : 4
+# RAMS                             : 98
+#      RAMB16BWER                  : 90
+#      RAMB8BWER                   : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 1
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             101  out of  54576     0%  
+ Number of Slice LUTs:                  239  out of  27288     0%  
+    Number used as Logic:               239  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    255
+   Number with an unused Flip Flop:     154  out of    255    60%  
+   Number with an unused LUT:            16  out of    255     6%  
+   Number of fully used LUT-FF pairs:    85  out of    255    33%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    218     5%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               94  out of    116    81%  
+    Number using Block RAM only:         94
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 297   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.963ns (Maximum Frequency: 167.694MHz)
+   Minimum input arrival time before clock: 4.954ns
+   Maximum output required time after clock: 7.048ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.963ns (frequency: 167.694MHz)
+  Total number of paths / destination ports: 67597 / 2425
+-------------------------------------------------------------------------
+Delay:               5.963ns (Levels of Logic = 40)
+  Source:            Inst_top_module/RAM_1/addrgen1a/addr1_2 (FF)
+  Destination:       Inst_top_module/RAM_1/addrgen1a/addr1_30 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: Inst_top_module/RAM_1/addrgen1a/addr1_2 to Inst_top_module/RAM_1/addrgen1a/addr1_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             52   0.447   1.905  Inst_top_module/RAM_1/addrgen1a/addr1_2 (Inst_top_module/RAM_1/addrgen1a/addr1_2)
+     LUT5:I0->O            1   0.203   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_lut<0> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<0> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<1> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<2> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<3> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<4> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<5> (Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<5>)
+     MUXCY:CI->O          32   0.213   1.291  Inst_top_module/RAM_1/addrgen1a/Mcompar_GND_12_o_addr1[30]_LessThan_1_o_cy<6> (Inst_top_module/RAM_1/addrgen1a/GND_12_o_addr1[30]_LessThan_1_o)
+     INV:I->O              1   0.206   0.579  Inst_top_module/RAM_1/addrgen1a/GND_12_o_addr1[30]_LessThan_1_o_inv1_INV_0 (Inst_top_module/RAM_1/addrgen1a/GND_12_o_addr1[30]_LessThan_1_o_inv)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<0> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<1> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<2> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<3> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<4> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<5> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<6> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<7> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<8> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<9> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<10> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<11> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<12> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<13> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<14> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<15> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<16> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<17> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<18> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<19> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<20> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<21> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<22> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<23> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<24> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<25> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<26> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<27> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<28> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<28>)
+     MUXCY:CI->O           0   0.019   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<29> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_cy<29>)
+     XORCY:CI->O           1   0.180   0.000  Inst_top_module/RAM_1/addrgen1a/Mcount_addr1_xor<30> (Inst_top_module/RAM_1/addrgen1a/Mcount_addr130)
+     FDR:D                     0.102          Inst_top_module/RAM_1/addrgen1a/addr1_30
+    ----------------------------------------
+    Total                      5.963ns (2.188ns logic, 3.775ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 88 / 88
+-------------------------------------------------------------------------
+Offset:              4.954ns (Levels of Logic = 2)
+  Source:            Reset_Main (PAD)
+  Destination:       Inst_addr_1b/cnt_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Reset_Main to Inst_addr_1b/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            71   1.222   2.051  Reset_Main_IBUF (Reset_Main_IBUF)
+     LUT6:I0->O           18   0.203   1.049  Inst_addr_1b/Mcount_cnt_val4 (Inst_addr_1b/Mcount_cnt_val)
+     FDRE:R                    0.430          Inst_addr_1b/cnt_0
+    ----------------------------------------
+    Total                      4.954ns (1.855ns logic, 3.099ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 234 / 10
+-------------------------------------------------------------------------
+Offset:              7.048ns (Levels of Logic = 5)
+  Source:            Inst_top_module/RAM_1/RAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       data_out1<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_top_module/RAM_1/RAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram to data_out1<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKB->DOB0    1   1.850   0.684  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1349)
+     LUT3:I1->O            1   0.203   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_9141 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_914)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_44 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_44)
+     MUXF7:I0->O           1   0.131   0.579  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f7_3 (doutb<4>)
+     end scope: 'Inst_top_module/RAM_1/RAM1:doutb<4>'
+     OBUF:I->O                 2.571          data_out1_4_OBUF (data_out1<4>)
+    ----------------------------------------
+    Total                      7.048ns (4.958ns logic, 2.090ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.832|         |    5.963|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 11.27 secs
+ 
+--> 
+
+
+Total memory usage is 408528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

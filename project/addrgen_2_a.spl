@@ -1,0 +1,7 @@
+[Inputs]
+clk
+reset
+[Outputs]
+=wea[0:0]=
+=cnt1[17:0]=
+[BiDir]
