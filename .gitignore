@@ -1,0 +1,4 @@
+# Git ignore for Xilinx HDL projects
+
+*.html
+*.xreport
