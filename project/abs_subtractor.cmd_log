@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/jonas/ECE428/project/abs_subtractor.v -lang verilog -prj project -o abs_subtractor.spl -module abs_subtractor -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 abs_subtractor.spl /home/jonas/ECE428/project/abs_subtractor.sym 

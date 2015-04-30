@@ -1,0 +1,9 @@
+[Inputs]
+A
+B
+[Outputs]
+Q
+[BiDir]
+[ATTRIBUTES]
+VeriModel abs_subtractor
+
