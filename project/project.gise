@@ -58,24 +58,107 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Top_module.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Top_module.xst"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="abs_substractor_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_substractor_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_subtractor.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="abs_subtractor.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="abs_subtractor.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="abs_subtractor.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="abs_subtractor.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_subtractor_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="abs_subtractor_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="abs_subtractor_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_subtractor_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addrgen_1_a.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="addrgen_1_a.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="addrgen_1_a.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addrgen_1_a.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="addrgen_1_a.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addrgen_1_b.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="addrgen_1_b.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="addrgen_1_b.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addrgen_1_b.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="addrgen_1_b.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addrgen_2_a.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="addrgen_2_a.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="addrgen_2_a.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addrgen_2_a.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="addrgen_2_a.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1430283051" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1430283051">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338655" xil_pn:in_ck="-4296845240455310774" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1430338655">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="abs_substractor_tb.v"/>
+      <outfile xil_pn:name="abs_subtractor.v"/>
+      <outfile xil_pn:name="src/Bram1.vhd"/>
+      <outfile xil_pn:name="src/Bram2.vhd"/>
+      <outfile xil_pn:name="src/Example.vhd"/>
+      <outfile xil_pn:name="src/Ram_out_1.vhd"/>
+      <outfile xil_pn:name="src/Ram_out_2.vhd"/>
+      <outfile xil_pn:name="src/Top_module.vhd"/>
+      <outfile xil_pn:name="src/addrgen_1_a.vhd"/>
+      <outfile xil_pn:name="src/addrgen_1_b.v"/>
+      <outfile xil_pn:name="src/addrgen_2_a.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338429" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4041643416074004971" xil_pn:start_ts="1430338429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338429" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2371211754020698067" xil_pn:start_ts="1430338429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430283056" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-679933069388609432" xil_pn:start_ts="1430283056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338655" xil_pn:in_ck="-4296845240455310774" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1430338655">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="abs_substractor_tb.v"/>
+      <outfile xil_pn:name="abs_subtractor.v"/>
+      <outfile xil_pn:name="src/Bram1.vhd"/>
+      <outfile xil_pn:name="src/Bram2.vhd"/>
+      <outfile xil_pn:name="src/Example.vhd"/>
+      <outfile xil_pn:name="src/Ram_out_1.vhd"/>
+      <outfile xil_pn:name="src/Ram_out_2.vhd"/>
+      <outfile xil_pn:name="src/Top_module.vhd"/>
+      <outfile xil_pn:name="src/addrgen_1_a.vhd"/>
+      <outfile xil_pn:name="src/addrgen_1_b.v"/>
+      <outfile xil_pn:name="src/addrgen_2_a.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338657" xil_pn:in_ck="-4296845240455310774" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-575010760608080919" xil_pn:start_ts="1430338655">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="abs_subtractor_beh.prj"/>
+      <outfile xil_pn:name="abs_subtractor_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1430338657" xil_pn:in_ck="7810749390180438210" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6104681853013121044" xil_pn:start_ts="1430338657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="abs_subtractor_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -108,6 +191,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Example.lso"/>
       <outfile xil_pn:name="Example.ngc"/>
       <outfile xil_pn:name="Example.ngr"/>
