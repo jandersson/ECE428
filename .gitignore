@@ -2,3 +2,6 @@
 
 *.html
 *.xreport
+*.log
+*.exe
+*.cmd
