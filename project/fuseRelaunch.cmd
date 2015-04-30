@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/jonas/ECE428/project/abs_subtractor_isim_beh.exe" -prj "/home/jonas/ECE428/project/abs_subtractor_beh.prj" "work.abs_subtractor" "work.glbl" 

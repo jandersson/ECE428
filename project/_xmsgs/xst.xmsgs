@@ -5,114 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/jonas/ECE428/project/src/Top_module.vhd" Line 89: Actual for formal port <arg fmt="%s" index="1">ce</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="751" delta="new" >"/home/jonas/ECE428/project/abs_subtractor.v" Line 28: Redeclaration of ansi port <arg fmt="%s" index="1">A</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/jonas/ECE428/project/src/addrgen_1_b.v" Line 52: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="751" delta="new" >"/home/jonas/ECE428/project/abs_subtractor.v" Line 29: Redeclaration of ansi port <arg fmt="%s" index="1">B</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/jonas/ECE428/project/src/Example.vhd" Line 28: Net &lt;<arg fmt="%s" index="1">addr_2b[17]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/jonas/ECE428/project/src/Example.vhd" Line 29: Net &lt;<arg fmt="%s" index="1">en_ram2</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">addr_2b</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">en_ram2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/jonas/ECE428/project/src/Top_module.vhd</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">data_in_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/jonas/ECE428/project/src/Top_module.vhd</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">adr_1_a</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/jonas/ECE428/project/src/Top_module.vhd</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">data_in_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/jonas/ECE428/project/src/Top_module.vhd</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">adr_2_a</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RAM_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="2146" delta="new" >In block &lt;<arg fmt="%s" index="1">Example</arg>&gt;, <arg fmt="%s" index="2">Counter</arg> &lt;<arg fmt="%s" index="3">Inst_top_module/RAM_1/data</arg>&gt; </msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_top_module/RAM_1/data_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Example</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="751" delta="new" >"/home/jonas/ECE428/project/abs_subtractor.v" Line 30: Redeclaration of ansi port <arg fmt="%s" index="1">Q</arg> is not allowed
 </msg>
 
 </messages>

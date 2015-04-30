@@ -5,17 +5,17 @@ Parameter TMPDIR set to /home/jonas/ECE428/project/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 Parameter xsthdpdir set to /home/jonas/ECE428/project/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
-Reading design: addrgen_1_b.prj
+Reading design: abs_subtractor.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -42,19 +42,22 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/jonas/ECE428/project/src/addrgen_1_b.v" into library work
-Parsing module <addrgen_1_b>.
+Analyzing Verilog file "/home/jonas/ECE428/project/abs_subtractor.v" into library work
+Parsing module <abs_subtractor>.
+WARNING:HDLCompiler:751 - "/home/jonas/ECE428/project/abs_subtractor.v" Line 28: Redeclaration of ansi port A is not allowed
+WARNING:HDLCompiler:751 - "/home/jonas/ECE428/project/abs_subtractor.v" Line 29: Redeclaration of ansi port B is not allowed
+WARNING:HDLCompiler:751 - "/home/jonas/ECE428/project/abs_subtractor.v" Line 30: Redeclaration of ansi port Q is not allowed
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.41 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.37 secs
  
 --> 
 
 
-Total memory usage is 299412 kilobytes
+Total memory usage is 299420 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

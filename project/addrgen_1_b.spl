@@ -1,0 +1,11 @@
+[Inputs]
+clk
+Reset_Main
+VtcVde
+[Outputs]
+en_ram1
+=addr_1b[17:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel addrgen_1_b
+
