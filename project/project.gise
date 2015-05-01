@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="project.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Background_subtraction_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bram1.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Bram1.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Bram1.stx"/>
@@ -40,6 +41,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Example.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Example.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Example.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Example_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Example_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Example_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Example_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Ram_out_1.prj"/>
@@ -58,9 +61,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Top_module.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Top_module.xst"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_substractor_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="abs_substractor_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="abs_substractor_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_substractor_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_subtractor.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="abs_subtractor.spl"/>
@@ -69,6 +70,8 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="abs_subtractor.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="abs_subtractor_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="abs_subtractor_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="acc_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="acc_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="accumulator_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addrgen_1_a.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="addrgen_1_a.spl"/>
@@ -85,6 +88,12 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="addrgen_2_a.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addrgen_2_a.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="addrgen_2_a.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="background_sub_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="background_sub_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="background_sub_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="background_sub_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="example_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="example_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -99,12 +108,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1430425743" xil_pn:in_ck="8390802904716399854" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1430425743">
+    <transform xil_pn:end_ts="1430452973" xil_pn:in_ck="-7662056255721338234" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1430452973">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Background_subtraction.v"/>
       <outfile xil_pn:name="abs_substractor_tb.v"/>
       <outfile xil_pn:name="abs_subtractor.v"/>
+      <outfile xil_pn:name="acc_tb.v"/>
       <outfile xil_pn:name="accumulator.v"/>
+      <outfile xil_pn:name="background_sub_tb.v"/>
+      <outfile xil_pn:name="example_tb.v"/>
       <outfile xil_pn:name="src/Bram1.vhd"/>
       <outfile xil_pn:name="src/Bram2.vhd"/>
       <outfile xil_pn:name="src/Example.vhd"/>
@@ -115,28 +128,28 @@
       <outfile xil_pn:name="src/addrgen_1_b.v"/>
       <outfile xil_pn:name="src/addrgen_2_a.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1430423144" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="198701985850840541" xil_pn:start_ts="1430423144">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1430423144" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6710290968528684955" xil_pn:start_ts="1430423144">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1430283056" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-679933069388609432" xil_pn:start_ts="1430283056">
+    <transform xil_pn:end_ts="1430452631" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3507436351183031381" xil_pn:start_ts="1430452631">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1430423986" xil_pn:in_ck="-4296845240455310774" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1430423986">
+    <transform xil_pn:end_ts="1430452631" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8973633138261971437" xil_pn:start_ts="1430452631">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
+    </transform>
+    <transform xil_pn:end_ts="1430448841" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7723233172825435347" xil_pn:start_ts="1430448841">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1430452973" xil_pn:in_ck="-7662056255721338234" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1430452973">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Background_subtraction.v"/>
       <outfile xil_pn:name="abs_substractor_tb.v"/>
       <outfile xil_pn:name="abs_subtractor.v"/>
+      <outfile xil_pn:name="acc_tb.v"/>
+      <outfile xil_pn:name="accumulator.v"/>
+      <outfile xil_pn:name="background_sub_tb.v"/>
+      <outfile xil_pn:name="example_tb.v"/>
       <outfile xil_pn:name="src/Bram1.vhd"/>
       <outfile xil_pn:name="src/Bram2.vhd"/>
       <outfile xil_pn:name="src/Example.vhd"/>
@@ -147,26 +160,22 @@
       <outfile xil_pn:name="src/addrgen_1_b.v"/>
       <outfile xil_pn:name="src/addrgen_2_a.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1430423988" xil_pn:in_ck="-4296845240455310774" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="600249960617934201" xil_pn:start_ts="1430423986">
+    <transform xil_pn:end_ts="1430452978" xil_pn:in_ck="-7662056255721338234" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8312480308339793833" xil_pn:start_ts="1430452973">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-      <outfile xil_pn:name="abs_substractor_tb_beh.prj"/>
-      <outfile xil_pn:name="abs_substractor_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="background_sub_tb_beh.prj"/>
+      <outfile xil_pn:name="background_sub_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1430423988" xil_pn:in_ck="7810749390180438210" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5217602801279677948" xil_pn:start_ts="1430423988">
+    <transform xil_pn:end_ts="1430452978" xil_pn:in_ck="-8299935947910972443" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="239046811355526476" xil_pn:start_ts="1430452978">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="abs_substractor_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="background_sub_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -177,10 +186,12 @@
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7469357178364505591" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-679933069388609432" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -189,20 +200,26 @@
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="246693084657538041" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1430269803" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8111810143933695630" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1430269819" xil_pn:in_ck="-7959128224780543170" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7161264270222612681" xil_pn:start_ts="1430269803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>

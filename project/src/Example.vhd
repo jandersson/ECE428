@@ -31,7 +31,6 @@ signal Vde, en_ram1,en_ram2 : std_logic ;
 -----------------------------------------------------------------------
 -- Verilog Module Instantiation
 -----------------------------------------------------------------------
-
 component addrgen_1_b
 port ( clk    : in std_logic ;  
 		addr_1b : out std_logic_vector(17 downto 0) ; 

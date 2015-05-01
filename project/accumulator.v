@@ -15,7 +15,7 @@
 //
 // Revision: 
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments: Accumulator must be reset to initialize the output register.
 //
 //////////////////////////////////////////////////////////////////////////////////
 module accumulator #(parameter ACC_SIZE = 5)
