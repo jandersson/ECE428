@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/jonas/ECE428/project/background_sub_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/jonas/ECE428/project/background_sub_tb_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim2.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -32,4 +31,7 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 0 ps, Instance /background_sub_tb/uut1/Inst_top_module/RAM_1/RAM1/U0/native_mem_module/mem_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/background_sub_tb/uut1/Inst_top_module/RAM_1/RAM1/U0/native_mem_module/mem_module/).
+at 0 ps, Instance /background_sub_tb/uut1/Inst_top_module/RAM_1/RAM1/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/background_sub_tb/uut1/Inst_top_module/RAM_2/RAM2/U0/native_mem_module/mem_module/).
+at 0 ps, Instance /background_sub_tb/uut1/Inst_top_module/RAM_2/RAM2/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# exit 0

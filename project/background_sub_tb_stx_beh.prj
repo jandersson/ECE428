@@ -1,3 +1,4 @@
+verilog isim_temp "ipcore_dir/dcm.v"
 verilog isim_temp "src/addrgen_1_b.v"
 verilog isim_temp "accumulator.v"
 verilog isim_temp "abs_subtractor.v"

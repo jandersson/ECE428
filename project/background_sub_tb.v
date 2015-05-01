@@ -33,10 +33,14 @@ module background_sub_tb;
 
 	// Outputs
 	wire [4:0] data_out;
-
+	wire new_clk;
+	
+	dcm dcm(.CLK_IN1(pclk),
+			  .CLK_OUT1(new_clk),
+			  .RESET(1'b0));
 	// Instantiate the Unit Under Test (UUT)
 	Background_subtraction uut (
-		.pclk(pclk), 
+		.pclk(new_clk), 
 		.reset(reset), 
 		.data_out(data_out), 
 		.acc_en(acc_en), 
@@ -44,7 +48,7 @@ module background_sub_tb;
 		.reference_frame(reference_frame)
 	);
 	Example uut1 (
-		.clk(pclk), 
+		.clk(new_clk), 
 		.Reset_Main(reset), 
 		.data_out1(current_frame), 
 		.data_out2(reference_frame)

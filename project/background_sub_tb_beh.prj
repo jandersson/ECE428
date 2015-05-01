@@ -1,3 +1,4 @@
+verilog work "ipcore_dir/dcm.v"
 vhdl work "src/Bram2.vhd"
 vhdl work "src/Bram1.vhd"
 vhdl work "src/addrgen_2_a.vhd"

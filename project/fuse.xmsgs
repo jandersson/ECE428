@@ -11,6 +11,9 @@
 <msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"/home/jonas/ECE428/project/src/Top_module.vhd" Line 89: Actual for formal port <arg fmt="%s" index="1">ce</arg> is neither a static name nor a globally static expression
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/jonas/ECE428/project/background_sub_tb.v" Line 38: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/jonas/ECE428/project/Background_subtraction.v" Line 31: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">acc_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 

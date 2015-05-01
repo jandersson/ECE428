@@ -23,11 +23,14 @@ module Background_subtraction(pclk, reset, data_out, acc_en, current_frame, refe
 input pclk, reset, acc_en;
 input [4:0] current_frame, reference_frame;
 output [4:0] data_out;
-
 wire [4:0] sub_out;
-//reg [4:0] data_out;
+wire dcm_clk;
 
 abs_subtractor subtractor(current_frame, reference_frame, sub_out);
 accumulator accumulator(sub_out, pclk, reset, acc_en, data_out);
-
+	// Digital Clock Manager
+	dcm dcm(.CLK_IN1(pclk),
+			  .CLK_OUT1(dcm_clk),
+			  .RESET(1'b0));
+			  
 endmodule

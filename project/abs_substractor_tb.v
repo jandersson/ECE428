@@ -38,6 +38,7 @@ module abs_substractor_tb;
 		.Q(Q)
 	);
 
+
 	initial begin
 		// Initialize Inputs
 		A = 0;
