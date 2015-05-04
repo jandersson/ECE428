@@ -36,18 +36,14 @@ wire dcm_clk;
 									  
 	// Accumulates subtractor output								
 	accumulator accumulator(.acc_in(sub_out),
-									.pclk(dcm_clk),
+									.pclk(pclk),
 									.reset(reset),
 									.clock_enable(acc_en),
 									.acc_out(data_out));
-	
-	// Digital Clock Manager
-	dcm dcm(.CLK_IN1(pclk),
-			  .CLK_OUT1(dcm_clk),
-			  .RESET(1'b0));
+
 			  
 	// Address Generator
-	addrgen_1_b address_generator(.clk(dcm_clk),
+	addrgen_1_b address_generator(.clk(pclk),
 										   .addr_1b(addr_1_b),
 											.en_ram1(enable_ram1),
 											.Reset_Main(reset),

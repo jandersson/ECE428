@@ -52,8 +52,6 @@ port map (
 			en_ram1 => en_ram1 ,
 			Reset_Main => Reset_Main ,
 			VtcVde => Vde
-
-
 			);
 
 Inst_top_module : Entity work.top_module

@@ -52,13 +52,19 @@ module acc_tb;
 		// Wait 100 ns for global reset to finish
 		#100;
 		reset = 0;
-      acc_in = 10;
+      acc_in = 1;
 		clock_enable = 1;
 		
-		#100
-		acc_in = 5;
 		// Add stimulus here
-
+		#100;
+		reset = 1;
+		acc_in = 2;
+		
+		#20;
+		reset = 0;
+		
+		
+		
 	end
    always
 		#10 pclk = !pclk;

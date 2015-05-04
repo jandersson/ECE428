@@ -1,0 +1,3 @@
+vhdl isim_temp "src/Bram1.vhd"
+vhdl isim_temp "src/addrgen_1_a.vhd"
+vhdl isim_temp "src/Ram_out_1.vhd"

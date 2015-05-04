@@ -11,13 +11,13 @@
          <ClosedNode>/Example - Behavioral |home|jonas|ECE428|project|src|Example.vhd/Inst_top_module - Top_module - Behavioral/RAM_2 - Ram_out_2 - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>abs_subtractor (/home/jonas/ECE428/project/abs_subtractor.v)</SelectedItem>
+         <SelectedItem>Example - Behavioral (/home/jonas/ECE428/project/src/Example.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ea000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ea0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>abs_subtractor (/home/jonas/ECE428/project/abs_subtractor.v)</CurrentItem>
+      <CurrentItem>Example - Behavioral (/home/jonas/ECE428/project/src/Example.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -51,11 +51,11 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000fa000000010001000100000000000000000000000064ffffffff000000810000000000000001000000fa0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000064000000010001000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000630000006b01000000060100000002</SourceProcessView>
+   <SourceProcessView>000000ff00000000000000020000016c0000007601000000060100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -66,7 +66,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000117000000010000000100000000000000000000000064ffffffff000000810000000000000001000001170000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a9000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Create Schematic Symbol</CurrentItem>
    </ItemView>
@@ -83,7 +83,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000108000000010000000100000000000000000000000064ffffffff000000810000000000000001000001080000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a9000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -103,29 +103,40 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/Example - Behavioral |home|jonas|ECE428|project|src|Example.vhd</ClosedNode>
+         <ClosedNode>/Example - Behavioral |home|jonas|ECE428|project|src|Example.vhd/Inst_top_module - Top_module - Behavioral</ClosedNode>
+         <ClosedNode>/abs_substractor_tb |home|jonas|ECE428|project|abs_substractor_tb.v</ClosedNode>
+         <ClosedNode>/acc_tb |home|jonas|ECE428|project|acc_tb.v</ClosedNode>
+         <ClosedNode>/background_sub_tb |home|jonas|ECE428|project|background_sub_tb.v/uut - Background_subtraction</ClosedNode>
+         <ClosedNode>/background_sub_tb |home|jonas|ECE428|project|background_sub_tb.v/uut1 - Example - Behavioral/Inst_top_module - Top_module - Behavioral</ClosedNode>
+         <ClosedNode>/background_sub_tb |home|jonas|ECE428|project|background_sub_tb.v/uut1 - Example - Behavioral/Inst_top_module - Top_module - Behavioral/RAM_2 - Ram_out_2 - Behavioral</ClosedNode>
+         <ClosedNode>/example_tb |home|jonas|ECE428|project|example_tb.v/uut - Example - Behavioral/Inst_top_module - Top_module - Behavioral</ClosedNode>
+         <ClosedNode>/example_tb |home|jonas|ECE428|project|example_tb.v/uut - Example - Behavioral/Inst_top_module - Top_module - Behavioral/RAM_1 - Ram_out_1 - Behavioral</ClosedNode>
+         <ClosedNode>/example_tb |home|jonas|ECE428|project|example_tb.v/uut - Example - Behavioral/Inst_top_module - Top_module - Behavioral/RAM_2 - Ram_out_2 - Behavioral</ClosedNode>
+         <ClosedNode>/top |home|jonas|ECE428|project|top.v</ClosedNode>
+         <ClosedNode>/top |home|jonas|ECE428|project|top.v/bg_sub - Background_subtraction</ClosedNode>
+         <ClosedNode>/top |home|jonas|ECE428|project|top.v/ram1 - Ram_out_1 - Behavioral</ClosedNode>
+         <ClosedNode>/top |home|jonas|ECE428|project|top.v/ram2 - Ram_out_2 - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - abs_subtractor (/home/jonas/ECE428/project/abs_subtractor.v)</SelectedItem>
+         <SelectedItem>project</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000154000000020000000000000000000000000200000064ffffffff000000810000000300000002000001540000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000209000000020000000000000000000000000200000064ffffffff000000810000000300000002000002090000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>uut - abs_subtractor (/home/jonas/ECE428/project/abs_subtractor.v)</CurrentItem>
+      <CurrentItem>project</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>ISim Simulator</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000117000000010000000100000000000000000000000064ffffffff000000810000000000000001000001170000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -134,26 +145,38 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000117000000010000000100000000000000000000000064ffffffff000000810000000000000001000001170000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000014a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000014a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000117000000010000000100000000000000000000000064ffffffff000000810000000000000001000001170000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
    </ItemView>
 </Project>

@@ -1,0 +1,52 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd src -sd ipcore_dir -nt timestamp -i -p xc6slx45-csg324-3
+top.ngc top.ngd
+
+Reading NGO file "/home/jonas/ECE428/project/top.ngc" ...
+Loading design module "src/Bram1.ngc"...
+Loading design module "src/Bram2.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:483 - Attribute "INIT" on "frame_buffers/RAM_1/data<0>" is on
+   the wrong type of object.  Please see the Constraints Guide for more
+   information on this attribute.
+WARNING:NgdBuild:483 - Attribute "INIT" on "frame_buffers/RAM_1/data<1>" is on
+   the wrong type of object.  Please see the Constraints Guide for more
+   information on this attribute.
+WARNING:NgdBuild:483 - Attribute "INIT" on "frame_buffers/RAM_1/data<2>" is on
+   the wrong type of object.  Please see the Constraints Guide for more
+   information on this attribute.
+WARNING:NgdBuild:483 - Attribute "INIT" on "frame_buffers/RAM_1/data<3>" is on
+   the wrong type of object.  Please see the Constraints Guide for more
+   information on this attribute.
+WARNING:NgdBuild:483 - Attribute "INIT" on "frame_buffers/RAM_1/data<4>" is on
+   the wrong type of object.  Please see the Constraints Guide for more
+   information on this attribute.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Total memory usage is 409900 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "top.bld"...

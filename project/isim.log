@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/jonas/ECE428/project/background_sub_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/jonas/ECE428/project/background_sub_tb_isim_beh.wdb 
+Running: /home/jonas/ECE428/project/top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/jonas/ECE428/project/top_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -22,14 +22,15 @@ available at "www.flexerasoftware.com".
 WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "/home/jonas/ECE428/project/Background_subtraction.v" Line 26.  For instance uut/accumulator/, width 1 of formal port acc_in is not equal to width 5 of actual signal sub_out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 0 ps, Instance /background_sub_tb/uut1/Inst_top_module/RAM_1/RAM1/U0/native_mem_module/mem_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/background_sub_tb/uut1/Inst_top_module/RAM_1/RAM1/U0/native_mem_module/mem_module/).
-at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/background_sub_tb/uut1/Inst_top_module/RAM_2/RAM2/U0/native_mem_module/mem_module/).
+at 0 ps, Instance /top_tb/uut/frame_buffers/RAM_1/RAM1/U0/native_mem_module/mem_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/top_tb/uut/frame_buffers/RAM_1/RAM1/U0/native_mem_module/mem_module/).
+at 0 ps, Instance /top_tb/uut/frame_buffers/RAM_1/RAM1/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps: Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/top_tb/uut/frame_buffers/RAM_2/RAM2/U0/native_mem_module/mem_module/).
+at 0 ps, Instance /top_tb/uut/frame_buffers/RAM_2/RAM2/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # exit 0

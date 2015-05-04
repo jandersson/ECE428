@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module accumulator #(parameter ACC_SIZE = 5)
 	(
-    input acc_in,
+    input [ACC_SIZE - 1: 0] acc_in,
 	 input pclk,
 	 input reset,
 	 input clock_enable,
-    output acc_out
+    output reg [ACC_SIZE-1:0] acc_out
     );
-   reg [ACC_SIZE-1:0] acc_out;
+   //reg [ACC_SIZE-1:0] acc_out;
 
    always @ (posedge pclk)
       if (reset)
